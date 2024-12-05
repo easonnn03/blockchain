@@ -8,9 +8,9 @@ import Link from 'next/link';
 const SignIn = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [showResetForm, setShowResetForm] = useState(false); // State to show reset form
-  const [newPassword, setNewPassword] = useState(''); // New password state
-  const [errorMessage, setErrorMessage] = useState(''); // Error message state
+  const [showResetForm, setShowResetForm] = useState(false);
+  const [newPassword, setNewPassword] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
   const router = useRouter();
 
   const handleSubmit = async (e) => {
