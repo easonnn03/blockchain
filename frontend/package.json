@@ -10,14 +10,23 @@
   },
   "dependencies": {
     "@auth/prisma-adapter": "^2.7.4",
+    "@nestjs/common": "^10.4.13",
     "@prisma/client": "^6.0.1",
+    "@tanstack/react-query": "^5.62.2",
+    "@web3modal/ethereum": "^2.7.1",
+    "@web3modal/react": "^2.7.1",
+    "@web3modal/wagmi": "^4.2.3",
     "daisyui": "^4.12.14",
     "eslint-config-prettier": "^9.1.0",
+    "ethers": "^6.13.4",
     "next": "15.0.3",
     "next-auth": "^4.24.10",
     "prisma": "^6.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-toastify": "^10.0.6",
+    "viem": "^2.21.54",
+    "wagmi": "^2.13.3",
     "zod": "^3.23.8"
   },
   "devDependencies": {

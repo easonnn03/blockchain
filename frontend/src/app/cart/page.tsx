@@ -2,7 +2,7 @@ import { getCart } from "@/lib/db/cart";
 import { formatPrice } from "@/lib/format";
 import CartEntry from "./CartEntry";
 import { setProductQuantity } from "./actions";
-
+import BuyJewByToken from "@/components/BuyJewByToken";
 export const metadata = {
     title: "Your Cart - Champion",
 };
@@ -25,7 +25,7 @@ export default async function CartPage() {
                 <p className="mb-3 font-bold">
                     Total: {formatPrice(cart?.subtotal || 0)}
                 </p>
-                <button className="btn-primary btn sm:w-[200px]">Checkout</button>
+                <BuyJewByToken subtotal={cart?.subtotal ?? 0} />
             </div>
         </div>
     );

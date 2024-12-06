@@ -1,0 +1,77 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+}
+
+model accounts {
+  id                String @id @default(auto()) @map("_id") @db.ObjectId
+  access_token      String
+  expires_at        BigInt
+  id_token          String
+  provider          String
+  providerAccountId String
+  scope             String
+  token_type        String
+  type              String
+  userId            String @db.ObjectId
+
+  @@unique([provider, providerAccountId])
+}
+
+model cartitems {
+  id        String @id @default(auto()) @map("_id") @db.ObjectId
+  cartId    String @db.ObjectId
+  productId String @db.ObjectId
+  quantity  BigInt
+}
+
+model carts {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  createAt  DateTime @db.Date
+  updatedAt DateTime @db.Date
+}
+
+model products {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  category    String
+  certificate String
+  createAt    DateTime @db.Date
+  description String
+  imageUrl    String
+  name        String
+  price       BigInt
+  updatedAt   DateTime @db.Date
+}
+
+model sessions {
+  id           String @id @default(auto()) @map("_id") @db.ObjectId
+  /// Field referred in an index, but found no data to define the type.
+  sessionToken Json?  @unique
+}
+
+model users {
+  id            String @id @default(auto()) @map("_id") @db.ObjectId
+  email         String @unique
+  /// Could not determine type: the field only had null or empty values in the sample set.
+  emailVerified Json?
+  image         String
+  name          String
+}
+
+model verificationtokens {
+  id         String @id @default(auto()) @map("_id") @db.ObjectId
+  /// Field referred in an index, but found no data to define the type.
+  identifier Json?
+  /// Field referred in an index, but found no data to define the type.
+  token      Json?  @unique
+
+  @@unique([identifier, token])
+}

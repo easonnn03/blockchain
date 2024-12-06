@@ -7,6 +7,7 @@ import ShoppingCartButton from "./ShoppingCartButton";
 import UserMenuButton from "./UserMenuButton";
 import { getServerSession } from "next-auth";
 import { authOptions } from "../api/auth/[...nextauth]/route";
+import { Connect } from './Connect';
 
 async function searchProducts(formData: FormData) {
     "use server";
@@ -41,6 +42,7 @@ export default async function Navbar() {
                             />
                         </div>
                     </form>
+                    <Connect />
                     <ShoppingCartButton cart={cart} />
                     <UserMenuButton session={session} />
                 </div>
