@@ -1,0 +1,137 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\waipi\\Documents\\year 3\\sem 1\\BlockChain\\frontend\\backend\\contracts\\CertificateManager.sol": {
+      "lastModificationDate": 1733389456280,
+      "contentHash": "1ae4777d68b3c5d5c6092020fb32f469",
+      "sourceName": "contracts/CertificateManager.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "CertificateManager"
+      ]
+    },
+    "C:\\Users\\waipi\\Documents\\year 3\\sem 1\\BlockChain\\frontend\\backend\\contracts\\Lock.sol": {
+      "lastModificationDate": 1733384873008,
+      "contentHash": "47fc34e609cb64e15ade8a8194d1034f",
+      "sourceName": "contracts/Lock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [],
+      "artifacts": []
+    },
+    "C:\\Users\\waipi\\Downloads\\frontend1\\frontend1\\backend\\contracts\\CertificateManager.sol": {
+      "lastModificationDate": 1733460189216,
+      "contentHash": "1ae4777d68b3c5d5c6092020fb32f469",
+      "sourceName": "contracts/CertificateManager.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "CertificateManager"
+      ]
+    },
+    "C:\\Users\\waipi\\Downloads\\frontend1\\frontend1\\backend\\contracts\\Lock.sol": {
+      "lastModificationDate": 1733460189235,
+      "contentHash": "47fc34e609cb64e15ade8a8194d1034f",
+      "sourceName": "contracts/Lock.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [],
+      "artifacts": []
+    }
+  }
+}
