@@ -5,7 +5,7 @@ import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
 
 export const metadata = {
-    tittle: "Add Product - BCJewelry"
+    tittle: "Add Product - Champion"
 }
 
 async function addProduct(formData: FormData) {
